@@ -1,0 +1,9 @@
+# ignore backup files
+*~
+.*~
+
+# ignore IDE/editor files
+*.sublime-*
+
+npm-debug.log
+.env

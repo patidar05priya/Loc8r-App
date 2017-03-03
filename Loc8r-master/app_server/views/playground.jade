@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  #banner.page-header
+    .row
+      .col-xs-12
+        h1= title
+    .row
+      .col-xs-12
+        p
+          | CSS/HTML5/Bootstrap playground
+    .row
+      .col-xs-12
+        p
+          | The next bootstrap "row" has 3 contents (a bootstrap "row" is a div with css class "row").<br/>
+          | On a extra small device (smaller than 768px) they will be displayed below each other (3x col-xs-12).<br/>
+          | On a small device (larger than 768px) the first 2 contents will be displayed side by side, and the 3rd content will be displayed below the other 2  (2x col-sm-6 and 1x col-sm-12).<br/>
+          | On a large screen (larger than 1200px) all 3 contents will be displayed next to each other (3x col-lg-4).
+    .row
+      .col-xs-12.col-sm-6.col-lg-4
+        p.experimental content 1:<br/>This content is defined using .col-xs-12.col-sm-6.col-lg-4
+      .col-xs-12.col-sm-6.col-lg-4
+        p.experimental content 2:<br/>This content is defined using .col-xs-12.col-sm-6.col-lg-4
+      .col-xs-12.col-sm-12.col-lg-4
+        p.experimental content 3:<br/>This content is defined using .col-xs-12.col-sm-12.col-lg-4
